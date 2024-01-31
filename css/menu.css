@@ -1,0 +1,75 @@
+
+.contenedor_principal{
+    display: flex;
+    justify-content: center;
+}
+.contenedor_principal h1{
+    color: purple;
+    text-align: center;
+}
+
+.elprimero  {
+    text-align: left;
+    padding: 100px;
+}
+
+.elsegundo {
+    text-align: left;
+    padding: 100px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.video video {
+    width: 80%; 
+    max-width: 100%;
+}
+
+.video h1{
+    color: purple;
+}
+
+.descripcion_empresa{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.descripcion_empresa h1{
+    color: purple;
+    padding: 25px;
+}
+
+.descripcion_empresa p{
+    text-align: left;
+}
+
+
+/* Estilos para pantallas de celular (hasta 767px) */
+@media (max-width: 480px) {
+    .contenedor_principal{
+        width: 400px;
+        flex-direction: column;
+    }
+    .elprimero{
+        text-align: center;
+    }
+    .elsegundo{
+        text-align: center;
+    }
+    .descripcion_empresa{
+        width: 325px;
+    }
+    .video{
+        width: 400px;
+    }
+    .video h1{
+        width: 300px;
+    }
+}
