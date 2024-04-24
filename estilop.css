@@ -1,0 +1,412 @@
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    align-items: center;
+    top: 66px;
+}
+
+body{
+    background-color:#1e2326;
+}
+
+.slider-box{
+    width: 1288px;
+    height: 100vh;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 8s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.sobremua{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobremua .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremua h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremua .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremua .contenido-seccion p span{
+    color: aqua;
+    font-weight: bold;
+}
+
+.sobremua .fila{
+    display: flex;
+}
+
+.sobremua .fila .columna{
+    width: 50%;
+}
+
+.sobremua .fila .columna h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.sobremua .fila .columna ul{
+    list-style: none;
+}
+
+.sobremua .fila .columna ul li{
+    margin: 12px 0;
+}
+
+.sobremua .fila .columna ul li strong{
+    display: inline-block;
+    color: aqua;
+    width: 130px;
+}
+
+.sobremua .fila .columna ul li span{
+    background-color: aqua;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremua .fila .columna .contener-interes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremua .fila .columna .contener-interes .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremua .fila .columna .contener-interes .interes:hover{
+    background-color: aqua;
+}
+
+.sobremua .fila .columna .contener-interes .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.habilidades{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.habilidades .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.habilidades h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.habilidades .fila{
+    display: flex;
+}
+
+.habilidades .fila .columna h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.habilidades .skill >span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.habilidades .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.habilidades .skill .progreso{
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+}
+
+.habilidades .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+    color: black;
+}
+
+.habilidades .skill .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+
+@keyframes java{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.habilidades .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+
+@keyframes python{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.habilidades .skill .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+@keyframes css{
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.habilidades .skill .SQL{
+    width: 0%;
+    animation: 2s SQL forwards;
+}
+
+@keyframes SQL{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.habilidades .skill .MySQL{
+    width: 0%;
+    animation: 2s MySQL forwards;
+}
+
+@keyframes MySQL{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.habilidades .skill .fornite{
+    width: 0%;
+    animation: 2s fornite forwards;
+}
+
+@keyframes fornite{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.habilidades .skill .photo{
+    width: 0%;
+    animation: 2s photo forwards;
+}
+
+@keyframes photo{
+    0%{width: 0%;}
+    100%{width: 76%;}
+}
+
+.habilidades .skill .socio{
+    width: 0%;
+    animation: 2s socio forwards;
+}
+
+@keyframes socio{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.habilidades .skill .stec{
+    width: 0%;
+    animation: 2s stec forwards;
+}
+
+@keyframes stec{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.habilidades .skill .mantenimiento{
+    width: 0%;
+    animation: 2s mantenimiento forwards;
+}
+
+@keyframes mantenimiento{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.habilidades .skill .minecraft{
+    width: 0%;
+    animation: 2s minecraft forwards;
+}
+
+@keyframes minecraft{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.habilidades .skill .equipo{
+    width: 0%;
+    animation: 2s equipo forwards;
+}
+
+@keyframes equipo{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.trabajos h2{
+    color: #fff;
+    text-align: center;
+}
+
+.card{
+    background-color: #282d30;
+    color: #fff;
+    border-radius: 25px;
+    transition: .9s;
+}
+
+.card:hover{
+    background-color: rgb(4, 117, 117);
+}
+
+.card h6{
+    color: #fff;
+}
+
+.contacot{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),url(Images/mapa.avif);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contacot .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacot h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacot .fila{
+    display: flex;
+}
+
+.contacot .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacot .col input, .contacot .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.enviar{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacot .enviar .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacot .enviar:hover .overlay{
+    width: 100%;
+}
